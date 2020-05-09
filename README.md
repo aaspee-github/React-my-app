@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## TODO
+
+1.- Muestra la ubicación para cada movimiento en el formato (columna, fila) en la lista del historial de movimientos.
+2.- Convierte en negrita el elemento actualmente seleccionado en la lista de movimientos.
+3.- Reescribe el Board para usar 2 ciclos para hacer los cuadrados en vez de escribirlos a mano.
+4.- Agrega un botón de switch que te permita ordenar los movimientos en orden ascendente o descendente.
+5.- Cuando alguien gana, resalta los 3 cuadrados que hicieron que gane.
+6.- Cuando nadie gana, muestra un mensaje acerca de que el resultado es un empate
