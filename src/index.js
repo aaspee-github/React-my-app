@@ -66,16 +66,9 @@ class Game extends React.Component {
         this.setState({
             history: history.concat([{
                 squares: squares,
-<<<<<<< HEAD
-                ii: history.length,
-                rr: Math.trunc((i+3)/3),
-                cc: (i % 3) + 1,
-                XO:  squares[i],
-=======
                 // Store the index and Player of the latest moved square
                 latestMoveSquare: i,
                 XO: squares[i],
->>>>>>> 416eb2f4844a0183b614a147c28e0d67027e2af2
             }]),
             stepNumber: history.length,
             xIsNext: !this.state.xIsNext,
@@ -101,11 +94,7 @@ class Game extends React.Component {
             const col = 1 + latestMoveSquare % 3;
             const row = 1 + Math.floor(latestMoveSquare / 3);
             const desc = move ?
-<<<<<<< HEAD
-                'Go to move #' + move + ' => ' + step.XO + ' en ('+ step.rr + ',' + step.cc + ')'  :
-=======
                 `Go to move #${move} x "${XO}" en (${col}, ${row}) ` :
->>>>>>> 416eb2f4844a0183b614a147c28e0d67027e2af2
                 'Go to game start';
             const divStyle = (myJump === move) ? {fontWeight: 'bold'} : {fontWeight: 'normal'}; 
             return (
