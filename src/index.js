@@ -23,18 +23,16 @@ class Board extends React.Component {
     render() {
         let n = 0;
         let items = [];
-        for (let a = 0; a < 3; a++) {
-            let itemsInt = [];
-            for (let b = 0; b < 3; b++) {
-                itemsInt.push(this.renderSquare(n++))
-            };
-            items.push(<div className="board-row">{itemsInt}</div>);
-        };
+        for (let i = 0; i < 3; i++) {
+            let fila = [];
+            for (let j = 0; j < 3; j++) {
+                fila.push(this.renderSquare(n++));
+            }
+            items.push(<div key={i.toString()} className="board-row">{fila}</div>);
+        }
 
         return (
-            <div>
-                {items}
-            </div>
+            <div>{items}</div>
         );
     }
 }
@@ -45,10 +43,6 @@ class Game extends React.Component {
         this.state = {
             history: [{
                 squares: Array(9).fill(null),
-                ii: 0,
-                rr: 0,
-                cc: 0,
-                XO: '',
             }],
             stepNumber: 0,
             xIsNext: true,
