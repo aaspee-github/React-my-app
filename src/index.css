@@ -35,6 +35,10 @@ body {
   .square:focus {
     outline: none;
   }
+
+  .square.highlight {
+    background: #ddd
+  }
   
   .kbd-navigation .square:focus {
     background: #ddd;
