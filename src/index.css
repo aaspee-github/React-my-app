@@ -60,4 +60,12 @@ body {
   .game-info {
     margin-left: 20px;
   }
+
+  .status-info {
+    text-align: center;
+  }
+
+  .status-info.highlight {
+    animation: blinkingBackground 2s infinite;
+  }
   
